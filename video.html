@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7349bc3776.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logotipo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="mob/video.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Falcon</title>
+</head>
+
+<body>
+
+    <style>
+        .ativar{
+        display: flex;
+        position: absolute;
+        z-index: 6;
+        }
+        body{
+            background-color: #1f1f1f;
+        }
+        
+        @media (max-width:700px){
+            nav,.fundo-icone,.fundo-logo,
+            .fundo-pesquisaprincipal,.fundo-concluir{
+            display: none;
+            }
+            body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            html{
+             width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            }            
+        }
+   
+    </style>
+
+    <main class="mainmob">
+        <article class="fundo-video">
+            <iframe id="video" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" ></iframe>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </article>
+
+        <article class="fundo-dicas">
+            <div class="bloco-dicas">
+                <i class="fa-solid fa-book" id="icone-submaterial"></i>
+                <p id="titulo-dicas">Não esqueça do seu Caderno</p>
+            </div>
+            <div class="bloco-dicas">
+                <i class="fa-solid fa-computer" id="icone-submaterial"></i>
+                <p id="titulo-dicas">Pratique antes de ir para a próxima aula</p>
+            </div>
+            <div class="bloco-dicas">
+                <i class="fa-solid fa-house-laptop" id="icone-submaterial"></i>
+                <p id="titulo-dicas">Aproveite a Prática para desenvolver projetos</p>
+            </div>
+        </article>
+
+        <article class="fundo-material">
+
+            <div id="fundo-aprendizado">
+                <ul id="lista-aprendizado"> O que iremos Aprender ?
+                    <li id="dados-aprendizado" class="lista1"></li>
+                    <li id="dados-aprendizado" class="lista2"></li>
+                    <li id="dados-aprendizado" class="lista3"></li>
+                    <li id="dados-aprendizado" class="lista4"></li>
+                </ul>
+            </div>
+
+            <div id="fundo-arquivo" class="fundo-arquivo">
+                <p id="titulo-arquivo">Baixe o arquivo da aula</p>
+                <button id="baixar-arquivo">Baixar Arquivo</button>
+            </div>
+        </article>
+
+        <article class="fundo-concluir">
+            <button id="concluir-aula" onclick="concluir()">Concluir Aula</button>
+        </article>
+    </main>
+
+
+    <script src="js/page.js"></script>
+
+</body>
+</html>
